@@ -1,0 +1,30 @@
+//@media (min-width: 1200px){
+//  .pageWidth {
+//    ;
+//  }
+//}
+//@media (min-width: 992px){
+//  .pageWidth {
+//    width: 970px;
+//  }
+//}
+//@media (min-width: 768px){
+//  .pageWidth {
+//    width: 750px;
+//  }
+//}
+.pageWidth {
+  padding-right: 110px;
+  padding-left: 110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .section3 .bgred .content .business-items li .item:hover .img img {
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+  }
+}
