@@ -5,9 +5,16 @@
     <title>联点</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="s`````tylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/basisStyle.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/basics.js"></script>
+    <script>
+        var App = App || {};
+    </script>
 </head>
 <body>
 <section class="section1">
@@ -60,15 +67,15 @@
 <section class="section2 section">
     <div class="lump">
         <div class="spotting">
-            <div class="yellowLump scroll-slide-elem" data-smooth-rate="183"></div>
-            <div class="grayLump scroll-slide-elem" data-smooth-rate="173"></div>
-            <img class="two_1 scroll-slide-elem" data-smooth-rate="83" src="images/two_1.png">
-            <img class="two_2 scroll-slide-elem" data-smooth-rate="83" src="images/two_2.png">
+            <div class="yellowLump scroll-slide-elem" data-smooth-rate="50" data-delta-slide-y="0.1"></div>
+            <div class="grayLump scroll-slide-elem" data-smooth-rate="50" data-delta-slide-y="0.25"></div>
+            <img class="two_1 scroll-slide-elem" data-smooth-rate="50" data-delta-slide-y="0.15" src="images/two_1.png">
+            <img class="two_2 scroll-slide-elem" data-smooth-rate="50" data-delta-slide-y="0.25" src="images/two_2.png">
         </div>
     </div>
     <div class="content z1">
         <div class="spotting">
-            <div class="describe">
+            <div class="describe scroll-slide-elem" data-smooth-rate="50" data-delta-slide-y="0.1">
                 <h2>创新 前行</h2>
                 <span>Innovation Forward</span>
 
@@ -82,17 +89,17 @@
 <section class="section3 section">
     <div class="lump">
         <div class="spotting">
-            <div class="headline"><span>.001</span></div>
-            <div class="bg-headline"><span>.001</span></div>
-            <div class="good z1"><span>成功案例</span></div>
-            <div class="yellow_2"></div>
-            <img class="two_3" src="images/two_3.png">
-            <img class="two_5" src="images/two_5.png">
+            <div class="headline scroll-slide-elem" data-delta-slide-y="0.1"><span>.001</span></div>
+            <div class="bg-headline scroll-slide-elem" data-delta-slide-y="0.25"><span>.001</span></div>
+            <div class="good z1 scroll-slide-elem" data-delta-slide-y="0.1"><span>成功案例</span></div>
+            <div class="yellow_2 scroll-slide-elem" data-delta-slide-y="0.25"></div>
+            <img class="two_3 scroll-slide-elem" data-delta-slide-y="0.2" src="images/two_3.png">
+            <img class="two_5 scroll-slide-elem" data-delta-slide-y="0.1" src="images/two_5.png">
         </div>
     </div>
     <div class="content z1">
         <div class="spotting">
-            <div class="describe">
+            <div class="describe scroll-slide-elem" data-delta-slide-y="0.1">
                 <h2>亳州魔幻动漫大世界</h2>
 
                 <p>亳州魔幻大世界主题公园项目总占地约2263亩，总建筑面积约34.65万平方米。</p>
@@ -103,7 +110,7 @@
 
                 <p> 人、神、魔、天、水五界。联点负责该项目负责规划、大门区域深化和施工图设计。</p>
             </div>
-            <div class="more">
+            <div class="more scroll-slide-elem" data-delta-slide-y="0.25">
                 <span>查看<br/>更多</span><br>
                 <i class="jia">+</i>
             </div>
@@ -114,44 +121,44 @@
 <section class="section4 section">
     <div class="lump">
         <div class="spotting">
-            <div class="headline"><span>.002</span></div>
-            <div class="bg-headline"><span>.002</span></div>
-            <div class="good z1"><span>业务领域</span></div>
+            <div class="headline scroll-slide-elem" data-delta-slide-y="0.1"><span>.002</span></div>
+            <div class="bg-headline scroll-slide-elem" data-delta-slide-y="0.25"><span>.002</span></div>
+            <div class="good z1 scroll-slide-elem" data-delta-slide-y="0.1"><span>业务领域</span></div>
         </div>
     </div>
     <div class="content z1">
         <div class="spotting">
-            <div class="ld">
+            <div class="ll ld scroll-slide-elem" data-delta-slide-y="0.1">
                 <h3>陆地乐园</h3>
-                <img src="images/little_03.png"/>
+                <img  src="images/little_03.png"/>
                 <span>IAND PARK</span>
             </div>
-            <div class="sn">
+            <div class="ll sn scroll-slide-elem" data-delta-slide-y="0.2">
                 <h3>室内乐园</h3>
                 <img src="images/little_05.png"/>
                 <span>INDOOR PARK</span>
             </div>
-            <div class="ss">
+            <div class="ll ss scroll-slide-elem" data-delta-slide-y="0.15">
                 <h3>水上乐园</h3>
                 <img src="images/little_07.png"/>
                 <span>WATER PARK</span>
             </div>
-            <div class="sy">
+            <div class="ll sy scroll-slide-elem" data-delta-slide-y="0.1">
                 <h3>主题商业</h3>
                 <img src="images/little_09.png"/>
                 <span>THEME BUSINESS</span>
             </div>
-            <div class="dc">
+            <div class="ll dc scroll-slide-elem" data-delta-slide-y="0.2">
                 <h3>主题地产</h3>
                 <img src="images/little_11.png"/>
                 <span>THEME REAL ESTATE</span>
             </div>
-            <div class="wh">
+            <div class="ll wh scroll-slide-elem" data-delta-slide-y="0.25">
                 <h3>文化旅游</h3>
                 <img src="images/little_14.png"/>
                 <span>CULTURAL TOURISM</span>
             </div>
-            <div class="kj">
+            <div class="ll kj scroll-slide-elem" data-delta-slide-y="0.1">
                 <h3>创意科技产品</h3>
                 <img src="images/little_17.png"/>
                 <span>CREATIVE TECHNOLOGY PRODUCTS</span>
@@ -163,53 +170,53 @@
 <section class="section5 section">
     <div class="lump">
         <div class="spotting">
-            <div class="headline"><span>.003</span></div>
-            <div class="bg-headline"><span>.003</span></div>
-            <div class="good z1"><span>服务内容</span></div>
+            <div class="headline scroll-slide-elem" data-delta-slide-y="0.1"><span>.003</span></div>
+            <div class="bg-headline scroll-slide-elem" data-delta-slide-y="0.25"><span>.003</span></div>
+            <div class="good z1 scroll-slide-elem" data-delta-slide-y="0.1"><span>服务内容</span></div>
         </div>
     </div>
     <div class="content z1">
         <div class="spotting">
-            <div class="gc">
+            <div class="gc scroll-slide-elem" data-delta-slide-y="0.1">
                 <div class="ghch">
                     <span>PLANNING</span>
                     <h3>规划策划</h3>
                     <img src="images/two_6.png" >
                 </div>
-                <div class="more">
+                <div class="more scroll-slide-elem" data-delta-slide-y="0.25">
                     <span>查看<br/>更多</span><br>
                     <i class="jia">+</i>
                 </div>
             </div>
-            <div class="ss">
+            <div class="ss scroll-slide-elem" data-delta-slide-y="0.15">
                 <div class="sdsj">
                     <span>DEVELOPED DESIGN</span>
                     <h3>深度设计</h3>
                     <img src="images/two_4.png" >
                 </div>
-                <div class="more">
+                <div class="more scroll-slide-elem" data-delta-slide-y="0.25">
                     <span>查看<br/>更多</span><br>
                     <i class="jia">+</i>
                 </div>
             </div>
-            <div class="bg">
+            <div class="bg scroll-slide-elem" data-delta-slide-y="0.25">
                 <div class="bzgc">
                     <span>DECORATION PROJECT</span>
                     <h3>包装工程</h3>
                     <img src="images/two_7.png" >
                 </div>
-                <div class="more">
+                <div class="more scroll-slide-elem" data-delta-slide-y="0.1">
                     <span>查看<br/>更多</span><br>
                     <i class="jia">+</i>
                 </div>
             </div>
-            <div class="ck">
+            <div class="ck scroll-slide-elem" data-delta-slide-y="0.2">
                 <div class="cykj">
                     <span>CREATIVE TECHNOLOGY PRODUCTS</span>
                     <h3>创意科技产品</h3>
                     <img src="images/two_8.png" >
                 </div>
-                <div class="more">
+                <div class="more scroll-slide-elem" data-delta-slide-y="0.1">
                     <span>查看<br/>更多</span><br>
                     <i class="jia">+</i>
                 </div>
@@ -225,10 +232,7 @@
         Copyright © 2018 联点. All rights reserved &nbsp; | &nbsp; 粤ICP备09024814号 &nbsp; | &nbsp; 公安部备案号：&nbsp;4403040200229
     </p>
 </footer>
-
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/util.js"></script>
-<script src="js/basics.js"></script>
+<script src="js/require.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

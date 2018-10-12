@@ -9,11 +9,32 @@ html, body {
   font-size: 20px;
   color: #fff;
   padding-top: 45px;
-  cursor: pointer; }
+  cursor: pointer;
+  overflow: hidden; }
   .more i {
     font-size: 18px;
-    margin-top: 10px;
+    display: block;
+    transition: all 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  .more span {
+    transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     display: block; }
+  .more::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    background: #333;
+    transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+  .more:hover span {
+    opacity: 0;
+    transform: translateY(-30px); }
+  .more:hover .jia {
+    transform: translateY(-35px); }
+  .more:hover::before {
+    top: 0; }
 
 .section1 {
   position: relative;
@@ -26,7 +47,8 @@ html, body {
     width: 100%;
     z-index: 100;
     transition: all 1s ease;
-    background: #fff; }
+    background: #fff;
+    padding: 0 80px; }
     .section1 .head .logo {
       float: left;
       height: 1.2rem;
@@ -245,153 +267,65 @@ html, body {
     .section4 .lump .spotting .good span {
       line-height: 40px; }
   .section4 .content .spotting .ld {
-    width: 309px;
-    height: 518px;
-    position: absolute;
     top: 540px;
     left: 380px;
     background: #faa635;
-    text-align: center;
     padding-top: 160px; }
-    .section4 .content .spotting .ld h3 {
-      color: #fff;
-      font-size: 26px;
-      margin-bottom: 85px;
-      letter-spacing: 4px; }
-    .section4 .content .spotting .ld span {
-      position: absolute;
-      bottom: 18px;
-      right: 40px;
-      color: rgba(255, 255, 255, 0.5);
-      transform-origin: right bottom;
-      transform: rotateZ(90deg); }
   .section4 .content .spotting .sn {
-    width: 309px;
-    height: 518px;
-    position: absolute;
     top: 55px;
     left: 760px;
     background: #58585a;
-    text-align: center;
     padding-top: 160px; }
-    .section4 .content .spotting .sn h3 {
-      color: #fff;
-      font-size: 26px;
-      margin-bottom: 85px;
-      letter-spacing: 4px; }
-    .section4 .content .spotting .sn span {
-      position: absolute;
-      bottom: 18px;
-      right: 40px;
-      color: rgba(255, 255, 255, 0.5);
-      transform-origin: right bottom;
-      transform: rotateZ(90deg); }
   .section4 .content .spotting .ss {
-    width: 309px;
-    height: 518px;
-    position: absolute;
     top: 390px;
     left: 1200px;
     background: #faa635;
-    text-align: center;
     padding-top: 160px; }
-    .section4 .content .spotting .ss h3 {
-      color: #fff;
-      font-size: 26px;
-      margin-bottom: 85px;
-      letter-spacing: 4px; }
-    .section4 .content .spotting .ss span {
-      position: absolute;
-      bottom: 18px;
-      right: 40px;
-      color: rgba(255, 255, 255, 0.5);
-      transform-origin: right bottom;
-      transform: rotateZ(90deg); }
   .section4 .content .spotting .sy {
-    width: 309px;
-    height: 518px;
-    position: absolute;
     top: 780px;
     left: 840px;
     background: #f26532;
-    text-align: center;
     padding-top: 160px; }
-    .section4 .content .spotting .sy h3 {
-      color: #fff;
-      font-size: 26px;
-      margin-bottom: 85px;
-      letter-spacing: 4px; }
-    .section4 .content .spotting .sy span {
-      position: absolute;
-      bottom: 18px;
-      right: 40px;
-      color: rgba(255, 255, 255, 0.5);
-      transform-origin: right bottom;
-      transform: rotateZ(90deg); }
   .section4 .content .spotting .dc {
-    width: 309px;
-    height: 518px;
-    position: absolute;
     top: 1005px;
     left: 1355px;
     background: #58585a;
-    text-align: center;
     padding-top: 160px; }
-    .section4 .content .spotting .dc h3 {
-      color: #fff;
-      font-size: 26px;
-      margin-bottom: 85px;
-      letter-spacing: 4px; }
-    .section4 .content .spotting .dc span {
-      position: absolute;
-      bottom: 18px;
-      right: 40px;
-      color: rgba(255, 255, 255, 0.5);
-      transform-origin: right bottom;
-      transform: rotateZ(90deg); }
   .section4 .content .spotting .wh {
-    width: 309px;
-    height: 518px;
-    position: absolute;
     top: 175px;
     left: 1612px;
     background: #f26532;
-    text-align: center;
     padding-top: 160px; }
-    .section4 .content .spotting .wh h3 {
+  .section4 .content .spotting .kj {
+    top: 800px;
+    left: 1770px;
+    background: #f26532; }
+  .section4 .content .spotting .ll {
+    width: 309px;
+    height: 518px;
+    position: absolute;
+    text-align: center;
+    cursor: pointer !important; }
+    .section4 .content .spotting .ll img {
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+      animation-duration: 1s;
+      animation-fill-mode: both; }
+    .section4 .content .spotting .ll h3 {
       color: #fff;
       font-size: 26px;
       margin-bottom: 85px;
       letter-spacing: 4px; }
-    .section4 .content .spotting .wh span {
+    .section4 .content .spotting .ll span {
       position: absolute;
       bottom: 18px;
       right: 40px;
       color: rgba(255, 255, 255, 0.5);
       transform-origin: right bottom;
       transform: rotateZ(90deg); }
-  .section4 .content .spotting .kj {
-    width: 309px;
-    height: 518px;
-    position: absolute;
-    top: 800px;
-    left: 1770px;
-    background: #f26532;
-    text-align: center; }
-    .section4 .content .spotting .kj h3 {
-      color: #fff;
-      font-size: 26px;
-      margin-bottom: 85px;
-      margin-top: 160px;
-      letter-spacing: 4px; }
-    .section4 .content .spotting .kj span {
-      position: absolute;
-      bottom: 18px;
-      right: 40px;
-      color: rgba(255, 255, 255, 0.5);
-      transform-origin: right bottom;
-      transform: rotateZ(90deg);
-      white-space: nowrap; }
+    .section4 .content .spotting .ll:hover img {
+      -webkit-animation-name: bounce;
+      animation-name: bounce; }
 
 .section5 {
   height: 1370px; }
@@ -579,5 +513,54 @@ footer {
     display: inline-block;
     float: right;
     padding-right: 80px; }
+
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
 
 /*# sourceMappingURL=basisStyle.css.map */
