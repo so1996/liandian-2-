@@ -7,7 +7,7 @@
     var start_animate = $(".start-animate");
     var buffer = $(".buffer");
     var two_1 = $(".two_1");
-    
+
 
     function startAnimate() {
         var windowScroll = $(window).scrollTop();
