@@ -29,3 +29,13 @@ function randomColor() {
 	var result = "rgb("+ r +","+ g +","+ b +")";	// 返回结果	
 	return result;
 }
+
+/*
+* 获取元素的属性值
+* */
+function getCSS(obj,style){
+    if(window.getComputedStyle){
+        return getComputedStyle(obj)[style];
+    }
+    return obj.currentStyle[style];
+}
