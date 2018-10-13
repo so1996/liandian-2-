@@ -1,6 +1,11 @@
+@charset "UTF-8";
 html, body {
   animation: all 1s ease;
-  background: #f8f8f8; }
+  background: #f8f8f8;
+  font-family: 微软雅黑 !important; }
+
+.box {
+  overflow: hidden; }
 
 .more {
   width: 114px;
@@ -54,7 +59,8 @@ html, body {
       height: 1.2rem;
       display: flex;
       align-items: flex-end;
-      transition: all 1s ease; }
+      transition: all 1s ease;
+      line-height: 1.2rem; }
       .section1 .head .logo h1 {
         position: absolute;
         top: 0;
@@ -74,7 +80,8 @@ html, body {
         height: 1.2rem;
         display: flex;
         align-items: flex-end;
-        transition: all 1s ease; }
+        transition: all 1s ease;
+        line-height: 1.2rem; }
         .section1 .head .nav li a {
           padding-left: 12px;
           padding-right: 12px;
@@ -116,7 +123,7 @@ html, body {
       transform: translateX(-50%); }
 
 .section2 {
-  height: 860px; }
+  height: 800px; }
   .section2 .lump .spotting .yellowLump {
     width: 350px;
     height: 600px;
@@ -131,9 +138,17 @@ html, body {
     position: absolute;
     top: 117px;
     left: 320px; }
+  .section2 .lump .spotting .orangeLump {
+    width: 160px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 1645px;
+    background: #f26532;
+    z-index: 50; }
   .section2 .lump .spotting .two_1 {
     position: absolute;
-    top: 32px;
+    top: 22px;
     left: 1135px; }
   .section2 .lump .spotting .two_2 {
     position: absolute;
@@ -144,15 +159,17 @@ html, body {
     top: 210px;
     left: 510px;
     width: 535px; }
-    .section2 .content .spotting .describe h2 {
-      font-size: 62px;
-      color: #f06f43; }
+    .section2 .content .spotting .describe .zh2 {
+      font-size: 56px;
+      color: #f06f43;
+      font-weight: 100; }
     .section2 .content .spotting .describe span {
-      font-size: 45px;
+      font-size: 40px;
       color: #f06f43; }
     .section2 .content .spotting .describe p {
-      font-size: 24px;
-      color: #58585a; }
+      font-size: 20px;
+      color: #58585a;
+      line-height: 36px; }
 
 .section3 {
   height: 1500px; }
@@ -300,6 +317,10 @@ html, body {
     top: 800px;
     left: 1770px;
     background: #f26532; }
+    .section4 .content .spotting .kj h3 {
+      margin-top: 160px; }
+    .section4 .content .spotting .kj span {
+      white-space: nowrap; }
   .section4 .content .spotting .ll {
     width: 309px;
     height: 518px;

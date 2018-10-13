@@ -3,6 +3,11 @@
 html, body {
   animation: all 1s ease;
   background: #f8f8f8;
+  font-family: 微软雅黑 !important;
+}
+
+.box {
+  overflow: hidden;
 }
 
 .more {
@@ -73,6 +78,7 @@ html, body {
       display: flex;
       align-items: flex-end;
       transition: all 1s ease;
+      line-height: 1.2rem;
       h1 {
         position: absolute;
         top: 0;
@@ -99,12 +105,14 @@ html, body {
         display: flex;
         align-items: flex-end;
         transition: all 1s ease;
+        line-height: 1.2rem;
 
         a {
           padding-left: 12px;
           padding-right: 12px;
           color: #000;
           font-size: 20px;
+
 
           &:hover {
             color: #f26532;
@@ -156,7 +164,7 @@ html, body {
 }
 
 .section2 {
-  height: 860px;
+  height: 800px;
 
   .lump {
 
@@ -178,9 +186,18 @@ html, body {
         top: 117px;
         left: 320px;
       }
+      .orangeLump {
+        width: 160px;
+        height: 350px;
+        position: absolute;
+        top: 0;
+        left: 1645px;
+        background: #f26532;
+        z-index: 50;
+      }
       .two_1 {
         position: absolute;
-        top: 32px;
+        top: 22px;
         left: 1135px;
       }
       .two_2 {
@@ -201,17 +218,19 @@ html, body {
         left: 510px;
         width: 535px;
 
-        h2 {
-          font-size: 62px;
+        .zh2 {
+          font-size: 56px;
           color: #f06f43;
+          font-weight: 100;
         }
         span {
-          font-size: 45px;
+          font-size: 40px;
           color: #f06f43;
         }
         p {
-          font-size: 24px;
+          font-size: 20px;
           color: #58585a;
+          line-height: 36px;
         }
       }
     }
@@ -413,6 +432,14 @@ html, body {
         top: 800px;
         left: 1770px;
         background: #f26532;
+
+        h3 {
+          margin-top: 160px;
+        }
+
+        span {
+          white-space: nowrap;
+        }
       }
 
 
